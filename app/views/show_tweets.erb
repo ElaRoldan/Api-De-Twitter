@@ -1,0 +1,10 @@
+<h1><%= @user.twitter_handles %></h1>
+
+<% if @tweets %>
+  <% @tweets.each do |tweet| %>
+    <ul>
+      <li><%= tweet.text %></li>
+      <br>
+    </ul>  
+  <% end %>
+<% end %>
