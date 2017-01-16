@@ -3,7 +3,9 @@
 <% if @tweets %>
   <% @tweets.each do |tweet| %>
     <ul>
-      <li><%= tweet.text %></li>
+      <p><%= tweet.user_creation_time %></p>
+      <li><%= tweet.body %></li>
+
       <br>
     </ul>  
   <% end %>
